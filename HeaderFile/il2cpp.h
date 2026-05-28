@@ -1,5 +1,5 @@
 /* OAAU - IL2CPP SDK
- * Generated: 2026-05-28 02:18:33
+ * Generated: 2026-05-28 02:23:58
  * Build ID: 21934483 */
 
 #pragma once
@@ -22,4 +22,3 @@ namespace SDK {
     template<typename T> inline T Read(uintptr_t a) { return *(T*)a; }
     template<typename T> inline void Write(uintptr_t a, T v) { *(T*)a = v; }
 }
-59cc2","html":"https://g
