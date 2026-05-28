@@ -97,9 +97,9 @@ Build ID: xxxxxxxx
 This repository is automatically updated whenever a new game version is detected.  
 The offsets are extracted directly from the running game and pushed in real time.
 
-## 🆓 Free & Open
+## 🆓 Free
 
-This project is **completely free and open source**.  
+This project is **completely free**.  
 No paywalls, no subscriptions, no hidden charges.
 
 If you'd like to say thanks, you can find me on [Discord](https://discord.com/users/1383191871089672292).
