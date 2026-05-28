@@ -1,7 +1,7 @@
 /**
  * OAAU - Combat Master IL2CPP Offsets
- * Generated: 2026-05-28 02:15:11
- * Build ID: 0x698F6488
+ * Generated: 2026-05-28 02:18:33
+ * Build ID: 21934483
  */
 
 #pragma once
@@ -75225,4 +75225,4 @@ namespace OAAU {
         constexpr uintptr_t Load                                     = 0x34D5840;
         constexpr uintptr_t InstantiateGameWebView                   = 0x34D5710;
         constexpr uintptr_t InstantiateGameView                      = 0x34D5640;
-        constexpr uintptr_t InstantiateGameClient                                                                                                                                                                                                                                        
+        constexpr uintptr_t InstantiateGameClient                                                                                                                                                                                                                                        
