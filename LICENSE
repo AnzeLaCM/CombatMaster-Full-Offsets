@@ -1,0 +1,33 @@
+Anzela API & License
+
+Copyright (c) 2026 Anzela
+
+Permission is hereby granted to use this software and its associated files
+solely for accessing, managing, updating, or interacting with authorized
+API services and offset data provided by Anzela.
+
+Restrictions:
+- Redistribution of this software is prohibited.
+- Reselling or sublicensing is prohibited.
+- Modification of core authentication, API, or offset protection systems
+  is prohibited without written permission.
+- Unauthorized public sharing of offsets, endpoints, or private API data
+  is prohibited.
+- Reverse engineering intended to bypass licensing, authentication,
+  or update systems is prohibited.
+
+You may:
+- Use the software privately.
+- Integrate official APIs provided by Anzela.
+- Receive updates and offset changes through official services.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
