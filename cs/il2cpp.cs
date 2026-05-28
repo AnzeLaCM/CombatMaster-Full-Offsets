@@ -1,5 +1,5 @@
 /* OAAU - IL2CPP SDK
- * Generated: 2026-05-28 01:53:19
+ * Generated: 2026-05-28 02:04:39
  * Build ID: 0x698F6488 */
 
 namespace OAAU.SDK
@@ -16,5 +16,4 @@ namespace OAAU.SDK
     public struct Quaternion { public float x, y, z, w; }
     public struct Color { public float r, g, b, a; }
 }
-{ *(T*)a = v; }
-}
+nature":null,"payl
