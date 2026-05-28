@@ -88,9 +88,8 @@ Each dump includes a `dump_info.txt` with:
 ```
 OAAU IL2CPP Dump
 Game: Combat Master
-Dump Time: 2026-05-28 01:23:45
-Build ID: 0x698F6488
-Classes: 4261
+Dump Time: xxxx-xx-xx xx:xx:xx
+Build ID: xxxxxxxx
 ```
 
 ## 🔄 Auto-Update
