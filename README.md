@@ -107,5 +107,5 @@ If you'd like to say thanks, you can find me on [Discord](https://discord.com/us
 ---
 
 <div align="center">
-  <sub>Combat Master Full Offsets — Keeping the community updated, always.<3 </sub>
+  <sub>Combat Master Full Offsets — Keeping the community updated, always.</sub>
 </div>
