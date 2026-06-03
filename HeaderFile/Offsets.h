@@ -1,6 +1,6 @@
 /**
  * Combat Master IL2CPP Offsets
- * Generated: 2026-06-03 14:23:10
+ * Generated: 2026-06-03 14:36:23
  * Build ID: 21934483 */
 
 #pragma once
@@ -11414,8 +11414,7 @@ namespace CombatMaster {
         constexpr uintptr_t IsConnected                              = 0x3496B0;
     };
 
-        // ;
-
+        // UnityEngine.PlayerConnectionInternal
         struct PlayerConnectionInternal {
 
         // ---- Methods ----
@@ -14795,9 +14794,9 @@ namespace CombatMaster {
         constexpr uintptr_t Reset                                    = 0x351010;
     };
 
-        // r<TKey,TValue>>.GetEnumerator = 0x3479D0;
-
-        struct ConditionalWeakTable_ {
+        // System.Runtime.CompilerServices.ConditionalWeakTable`2
+        struct alue>>.GetEnumerator = 0x3479D0;
+ {
         constexpr uintptr_t data                                     = 0x0;
         constexpr uintptr_t _lock                                    = 0x0;
         constexpr uintptr_t size                                     = 0x0;
@@ -16787,9 +16786,9 @@ namespace CombatMaster {
         constexpr uintptr_t TickRealtimeProbes                       = 0x3496B0;
     };
 
-        // stance = 0x2FDF030;
-
-        struct ScriptableRuntimeReflectionSystemSettings {
+        // UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings
+        struct 2FDF080;
+ {
         constexpr uintptr_t s_Instance                               = 0x0;
 
         // ---- Methods ----
@@ -16799,9 +16798,9 @@ namespace CombatMaster {
         constexpr uintptr_t .cctor                                   = 0x2FDEFB0;
     };
 
-        // timeProbes = 0x2FDF220;
-
-        struct ScriptableRuntimeReflectionSystemWrapper {
+        // UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemWrapper
+        struct s = 0x2FDF220;
+ {
 
         // ---- Methods ----
         constexpr uintptr_t get_implementation                       = 0x53E8F0;
@@ -47283,7 +47282,7 @@ namespace CombatMaster {
         constexpr uintptr_t .ctor                                    = 0x520010;
     };
 
-        // 
+        // System.Reflection.StrongNameKeyPair
         struct StrongNameKeyPair {
         constexpr uintptr_t _publicKey                               = 0x10;
         constexpr uintptr_t _keyPairContainer                        = 0x18;
@@ -50235,9 +50234,9 @@ namespace CombatMaster {
         constexpr uintptr_t .cctor                                   = 0x1FE7E20;
     };
 
-        // Key,TValue>>.Remove = 0x463590;
-
-        struct ConcurrentDictionary_ {
+        // System.Collections.Concurrent.ConcurrentDictionary`2
+        struct Value>>.Remove = 0x463590;
+ {
         constexpr uintptr_t _tables                                  = 0x0;
         constexpr uintptr_t _comparer                                = 0x0;
         constexpr uintptr_t _growLockArray                           = 0x0;
@@ -50474,9 +50473,9 @@ namespace CombatMaster {
         constexpr uintptr_t .ctor                                    = 0x351010;
     };
 
-        // 
-
-        struct ReadOnlyDictionary_ {
+        // System.Collections.ObjectModel.ReadOnlyDictionary`2
+        struct 9D0;
+ {
         constexpr uintptr_t m_dictionary                             = 0x0;
         constexpr uintptr_t _syncRoot                                = 0x0;
         constexpr uintptr_t _keys                                    = 0x0;
@@ -50587,9 +50586,9 @@ namespace CombatMaster {
         constexpr uintptr_t System.Collections.ICollection.get_SyncRoot = 0x3479D0;
     };
 
-        // >>.CopyTo = 0x35D360;
-
-        struct Dictionary_ {
+        // System.Collections.Generic.Dictionary`2
+        struct 9D0;
+ {
         constexpr uintptr_t _buckets                                 = 0x0;
         constexpr uintptr_t _entries                                 = 0x0;
         constexpr uintptr_t _count                                   = 0x0;
