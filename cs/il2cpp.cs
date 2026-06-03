@@ -1,8 +1,8 @@
-/* OAAU - IL2CPP SDK
- * Generated: 2026-06-03 13:53:41
+/* Combat Master - IL2CPP SDK
+ * Generated: 2026-06-03 14:03:02
  * Build ID: 21934483 */
 
-namespace OAAU.SDK
+namespace CombatMaster.SDK
 {
     public class Il2CppObject { public System.IntPtr klass; public System.IntPtr monitor; }
     public class Il2CppString : Il2CppObject { public int length; public char[] chars; }
