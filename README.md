@@ -143,83 +143,64 @@ namespace CombatMaster {
 
 All offsets are **relative to `Project.dll`** (Unity's il2cpp game assembly).
 
-To use an offset value, simply add it to the game's base address:
+### Direct Format (`Direct.hpp`)
+
+The simplest way: every offset is `ClassName_MemberName`. No nested namespaces.
 
 ```cpp
-uintptr_t game = (uintptr_t)GetModuleHandleA("Project.dll");
-int health = *(int*)(game + Player_PlayerRoot_playerHealth); // read player health
-```
+#include "Direct.hpp"
 
-### Reading Static Fields (e.g., find your player)
-
-Classes with static data include a `_StaticData` constant pointing to the class's static storage. Use it like this:
-
-```cpp
 uintptr_t game = (uintptr_t)GetModuleHandleA("Project.dll");
 
-// Get the static data block for PlayerRoot
-uintptr_t playerRootStatic = game + Player_PlayerRoot_StaticData;
+// Read field offset
+int health = *(int*)(game + PlayerRoot_playerHealth);
 
-// Read static fields from that block (these are pointers to runtime objects)
-uintptr_t myPlayer = *(uintptr_t*)(playerRootStatic + Player_PlayerRoot_MyPlayer);
+// Read static data block (classes with static fields have _StaticData)
+uintptr_t staticData = game + PlayerRoot_StaticData;
 
-// Now read field offsets from the player object
-int health = *(int*)(myPlayer + Player_PlayerRoot_get_Health);
+// Call method by RVA
+typedef void (*TakeDamage_t)(uintptr_t, float);
+auto TakeDamage = (TakeDamage_t)(game + PlayerRoot_TakeDamage);
+TakeDamage(localPlayer, 10.0f);
 ```
 
-### Simple ESP (No GUI) — Full Example
+### Full Example — Simple Internal ESP
 
 ```cpp
 #include "Direct.hpp"
 #include <windows.h>
-#include <vector>
 
-struct Vec3 { float x, y, z; };
-
-// Helper to read memory
-template<typename T> T Read(uintptr_t addr) { return *(T*)addr; }
+template<typename T> T Read(uintptr_t a) { return *(T*)a; }
 
 int main() {
     uintptr_t game = (uintptr_t)GetModuleHandleA("Project.dll");
 
-    // 1. Get the PlayerRoot static data block (contains all player instances)
-    uintptr_t staticData  = game + Player_PlayerRoot_StaticData;
-    uintptr_t localPlayer = Read<uintptr_t>(staticData + Player_PlayerRoot_MyPlayer);
+    // Read static data block for PlayerRoot
+    uintptr_t sd  = game + PlayerRoot_StaticData;
+    uintptr_t me  = Read<uintptr_t>(sd + PlayerRoot_MyPlayer);
+    uintptr_t all = Read<uintptr_t>(sd + PlayerRoot_AllPlayers);
 
-    // 2. Read local player info
-    Vec3  pos    = Read<Vec3>(localPlayer + Player_PlayerRoot_get_Transform); // position
-    int   health = Read<int>(localPlayer + Player_PlayerRoot_get_Health);
-    int   teamId = Read<int>(localPlayer + Player_PlayerRoot_TeamId);
+    int myHP = Read<int>(me + PlayerRoot_Health);
+    myHP = 999; // set health
+    *(int*)(me + PlayerRoot_Health) = myHP;
 
-    // 3. Iterate all players via static list
-    uintptr_t playerList = Read<uintptr_t>(staticData + Player_PlayerRoot_AllPlayers);
-    auto* list = (uintptr_t*)playerList;
-
+    // Loop through all players
     for (int i = 0; i < 10; i++) {
-        uintptr_t player = list[i];
-        if (!player || player == localPlayer) continue;
+        uintptr_t p = ((uintptr_t*)all)[i];
+        if (!p || p == me) continue;
 
-        int   hp     = Read<int>(player + Player_PlayerRoot_get_Health);
-        Vec3  ppos   = Read<Vec3>(player + Player_PlayerRoot_get_Transform);
-        int   team   = Read<int>(player + Player_PlayerRoot_TeamId);
-        bool  alive  = Read<bool>(player + Player_PlayerRoot_IsAlive);
-
-        // ESP drawing here (your own overlay / console / etc.)
-        // printf("Player %d: HP=%d Team=%d Alive=%d\n", i, hp, team, alive);
+        int   hp   = Read<int>(p + PlayerRoot_Health);
+        int   team = Read<int>(p + PlayerRoot_TeamId);
+        // Draw ESP using your overlay method
     }
 
-    // 4. Call a method by its RVA
-    typedef void (*TakeDamage_t)(uintptr_t, float);
-    auto TakeDamage = (TakeDamage_t)(game + Player_PlayerRoot_TakeDamage);
-    TakeDamage(localPlayer, 10.0f);
-
-    return 0;
+    // Call TakeDamage (method pointer)
+    ((void(*)(uintptr_t, float))((void*)(game + PlayerRoot_TakeDamage)))(me, 10.0f);
 }
 ```
 
-> **Note:** Replace `Player_PlayerRoot_StaticData` with the actual class you need.  
-> The `Direct.hpp` file contains every offset as a flat `constexpr uintptr_t` constant.  
-> Just `#include "Direct.hpp"` and start reading — no nested namespaces required.
+> The `Direct.hpp` file contains ALL offsets as flat `ClassName_MemberName` constants.  
+> Each class has its own section with comment headers for easy browsing.
 
 ---
 
@@ -269,7 +250,7 @@ int main() {
 
 ## 📜 Metadata
 
-Each dump includes a `DumpLog.txt` with:
+Each dump includes a `dump_info.txt` with:
 
 ```
 Combat Master IL2CPP Dump
