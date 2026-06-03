@@ -1,8 +1,8 @@
-// OAAU - Combat Master IL2CPP Offsets
-// Generated: 2026-06-03 13:53:41
+// Combat Master IL2CPP Offsets
+// Generated: 2026-06-03 14:03:02
 // Build ID: 21934483
 
-namespace OAAU
+namespace CombatMaster
 {
     public static class Offsets
     {
