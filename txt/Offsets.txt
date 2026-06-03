@@ -1,5 +1,5 @@
 ===== Combat Master IL2CPP Offsets =====
-Generated: 2026-06-03 14:23:10
+Generated: 2026-06-03 14:36:23
 Build ID: 21934483
 
 
@@ -9427,8 +9427,7 @@ Build ID: 21934483
   Poll = 0x351010 (method)
   IsConnected = 0x3496B0 (method)
 
-=== ;
- ===
+=== UnityEngine.PlayerConnectionInternal ===
   UnityEngine.IPlayerEditorConnectionNative.SendMessage = 0x2F81DD0 (method)
   UnityEngine.IPlayerEditorConnectionNative.TrySendMessage = 0x2F81EC0 (method)
   UnityEngine.IPlayerEditorConnectionNative.Poll = 0x2F81670 (method)
@@ -12180,8 +12179,7 @@ Build ID: 21934483
   System.Collections.IEnumerator.get_Current = 0x3479D0 (method)
   Reset = 0x351010 (method)
 
-=== Enumerator = 0x3479D0;
- ===
+=== System.Runtime.CompilerServices.ConditionalWeakTable`2 ===
   data = 0x0
   _lock = 0x0
   size = 0x0
@@ -13826,16 +13824,14 @@ Build ID: 21934483
 === UnityEngine.Experimental.Rendering.IScriptableRuntimeReflectionSystem ===
   TickRealtimeProbes = 0x3496B0 (method)
 
-=== stance = 0x2FDF030;
- ===
+=== UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings ===
   s_Instance = 0x0
   set_Internal_ScriptableRuntimeReflectionSystemSettings_system = 0x2FDF080 (method)
   get_Internal_ScriptableRuntimeReflectionSystemSettings_instance = 0x2FDF030 (method)
   ScriptingDirtyReflectionSystemInstance = 0x2FDEF80 (method)
   .cctor = 0x2FDEFB0 (method)
 
-=== timeProbes = 0x2FDF220;
- ===
+=== UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemWrapper ===
   get_implementation = 0x53E8F0 (method)
   set_implementation = 0x53E910 (method)
   Internal_ScriptableRuntimeReflectionSystemWrapper_TickRealtimeProbes = 0x2FDF220 (method)
@@ -38530,7 +38526,7 @@ Build ID: 21934483
   GetPropertyFromHandle = 0x1FA9CA0 (method)
   .ctor = 0x520010 (method)
 
-===  ===
+=== System.Reflection.StrongNameKeyPair ===
   _publicKey = 0x10
   _keyPairContainer = 0x18
   _keyPairExported = 0x20
@@ -40986,8 +40982,7 @@ Build ID: 21934483
   ConcurrentDictionary_AcquiringAllLocks = 0x1FE7DD0 (method)
   .cctor = 0x1FE7E20 (method)
 
-=== ove = 0x463590;
- ===
+=== System.Collections.Concurrent.ConcurrentDictionary`2 ===
   _tables = 0x0
   _comparer = 0x0
   _growLockArray = 0x0
@@ -41197,8 +41192,7 @@ Build ID: 21934483
   System.Collections.ICollection.get_SyncRoot = 0x3479D0 (method)
   .ctor = 0x351010 (method)
 
-=== ove = 0x463590;
- ===
+=== System.Collections.ObjectModel.ReadOnlyDictionary`2 ===
   m_dictionary = 0x0
   _syncRoot = 0x0
   _keys = 0x0
@@ -41290,8 +41284,7 @@ Build ID: 21934483
   System.Collections.ICollection.get_IsSynchronized = 0x3496B0 (method)
   System.Collections.ICollection.get_SyncRoot = 0x3479D0 (method)
 
-=== yTo = 0x35D360;
- ===
+=== System.Collections.Generic.Dictionary`2 ===
   _buckets = 0x0
   _entries = 0x0
   _count = 0x0
