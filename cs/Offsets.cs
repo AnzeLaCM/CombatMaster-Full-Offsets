@@ -1,5 +1,5 @@
 // Combat Master IL2CPP Offsets
-// Generated: 2026-06-03 14:23:10
+// Generated: 2026-06-03 14:36:23
 // Build ID: 21934483
 
 namespace CombatMaster
@@ -11497,8 +11497,7 @@ namespace CombatMaster
              public const ulong IsConnected                              = 0x3496B0;
             }
 
-            // ;
-
+            // UnityEngine.PlayerConnectionInternal
             public static class PlayerConnectionInternal
             {
                 // ---- Methods ----
@@ -14932,9 +14931,9 @@ namespace CombatMaster
              public const ulong Reset                                    = 0x351010;
             }
 
-            // erator = 0x3479D0;
+            // System.Runtime.CompilerServices.ConditionalWeakTable`2
+            public static class erator = 0x3479D0;
 
-            public static class ConditionalWeakTable_
             {
              public const ulong data                                     = 0x0;
              public const ulong _lock                                    = 0x0;
@@ -16945,9 +16944,9 @@ namespace CombatMaster
              public const ulong TickRealtimeProbes                       = 0x3496B0;
             }
 
-            // stance = 0x2FDF030;
+            // UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings
+            public static class 2FDF080;
 
-            public static class ScriptableRuntimeReflectionSystemSettings
             {
              public const ulong s_Instance                               = 0x0;
                 // ---- Methods ----
@@ -16957,9 +16956,9 @@ namespace CombatMaster
              public const ulong .cctor                                   = 0x2FDEFB0;
             }
 
-            // timeProbes = 0x2FDF220;
+            // UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemWrapper
+            public static class s = 0x2FDF220;
 
-            public static class ScriptableRuntimeReflectionSystemWrapper
             {
                 // ---- Methods ----
              public const ulong get_implementation                       = 0x53E8F0;
@@ -47763,7 +47762,7 @@ namespace CombatMaster
              public const ulong .ctor                                    = 0x520010;
             }
 
-            // 
+            // System.Reflection.StrongNameKeyPair
             public static class StrongNameKeyPair
             {
              public const ulong _publicKey                               = 0x10;
@@ -50745,9 +50744,9 @@ namespace CombatMaster
              public const ulong .cctor                                   = 0x1FE7E20;
             }
 
-            // = 0x463590;
+            // System.Collections.Concurrent.ConcurrentDictionary`2
+            public static class = 0x463590;
 
-            public static class ConcurrentDictionary_
             {
              public const ulong _tables                                  = 0x0;
              public const ulong _comparer                                = 0x0;
@@ -50984,9 +50983,9 @@ namespace CombatMaster
              public const ulong .ctor                                    = 0x351010;
             }
 
-            // = 0x463590;
+            // System.Collections.ObjectModel.ReadOnlyDictionary`2
+            public static class = 0x463590;
 
-            public static class ReadOnlyDictionary_
             {
              public const ulong m_dictionary                             = 0x0;
              public const ulong _syncRoot                                = 0x0;
@@ -51099,9 +51098,9 @@ namespace CombatMaster
              public const ulong System.Collections.ICollection.get_SyncRoot = 0x3479D0;
             }
 
-            // = 0x35D360;
+            // System.Collections.Generic.Dictionary`2
+            public static class = 0x35D360;
 
-            public static class Dictionary_
             {
              public const ulong _buckets                                 = 0x0;
              public const ulong _entries                                 = 0x0;
