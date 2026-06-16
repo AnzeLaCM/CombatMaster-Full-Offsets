@@ -1,5 +1,5 @@
 /* Combat Master - IL2CPP SDK
- * Generated: 2026-06-03 14:36:23
+ * Generated: 2026-06-16 15:01:57
  * Build ID: 21934483 */
 
 #pragma once
