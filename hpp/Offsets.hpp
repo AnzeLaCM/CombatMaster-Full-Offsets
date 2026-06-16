@@ -1,6 +1,6 @@
 /**
  * Combat Master IL2CPP Offsets
- * Generated: 2026-06-03 14:36:23
+ * Generated: 2026-06-16 15:01:57
  * Build ID: 21934483 */
 
 #pragma once
@@ -14794,9 +14794,9 @@ namespace CombatMaster {
         constexpr uintptr_t Reset                                    = 0x351010;
     };
 
-        // System.Runtime.CompilerServices.ConditionalWeakTable`2
-        struct alue>>.GetEnumerator = 0x3479D0;
- {
+        // alue>>.GetEnumerator = 0x3479D0;
+
+        struct ConditionalWeakTable_ {
         constexpr uintptr_t data                                     = 0x0;
         constexpr uintptr_t _lock                                    = 0x0;
         constexpr uintptr_t size                                     = 0x0;
@@ -16786,9 +16786,9 @@ namespace CombatMaster {
         constexpr uintptr_t TickRealtimeProbes                       = 0x3496B0;
     };
 
-        // UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings
-        struct 2FDF080;
- {
+        // 0x2FDF030;
+
+        struct ScriptableRuntimeReflectionSystemSettings {
         constexpr uintptr_t s_Instance                               = 0x0;
 
         // ---- Methods ----
@@ -16798,9 +16798,9 @@ namespace CombatMaster {
         constexpr uintptr_t .cctor                                   = 0x2FDEFB0;
     };
 
-        // UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemWrapper
-        struct s = 0x2FDF220;
- {
+        // s = 0x2FDF220;
+
+        struct ScriptableRuntimeReflectionSystemWrapper {
 
         // ---- Methods ----
         constexpr uintptr_t get_implementation                       = 0x53E8F0;
@@ -50234,9 +50234,9 @@ namespace CombatMaster {
         constexpr uintptr_t .cctor                                   = 0x1FE7E20;
     };
 
-        // System.Collections.Concurrent.ConcurrentDictionary`2
-        struct Value>>.Remove = 0x463590;
- {
+        // alue>>.Remove = 0x463590;
+
+        struct ConcurrentDictionary_ {
         constexpr uintptr_t _tables                                  = 0x0;
         constexpr uintptr_t _comparer                                = 0x0;
         constexpr uintptr_t _growLockArray                           = 0x0;
@@ -50473,9 +50473,9 @@ namespace CombatMaster {
         constexpr uintptr_t .ctor                                    = 0x351010;
     };
 
-        // System.Collections.ObjectModel.ReadOnlyDictionary`2
-        struct 9D0;
- {
+        // ue>>.Remove = 0x463590;
+
+        struct ReadOnlyDictionary_ {
         constexpr uintptr_t m_dictionary                             = 0x0;
         constexpr uintptr_t _syncRoot                                = 0x0;
         constexpr uintptr_t _keys                                    = 0x0;
@@ -50586,9 +50586,9 @@ namespace CombatMaster {
         constexpr uintptr_t System.Collections.ICollection.get_SyncRoot = 0x3479D0;
     };
 
-        // System.Collections.Generic.Dictionary`2
-        struct 9D0;
- {
+        // yTo = 0x35D360;
+
+        struct Dictionary_ {
         constexpr uintptr_t _buckets                                 = 0x0;
         constexpr uintptr_t _entries                                 = 0x0;
         constexpr uintptr_t _count                                   = 0x0;
