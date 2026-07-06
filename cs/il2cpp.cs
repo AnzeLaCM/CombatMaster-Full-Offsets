@@ -1,5 +1,5 @@
 /* Combat Master - IL2CPP SDK
- * Generated: 2026-06-16 15:01:57
+ * Generated: 2026-07-06 06:15:41
  * Build ID: 21934483 */
 
 namespace CombatMaster.SDK
